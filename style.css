@@ -69,3 +69,45 @@ header h1 {
     font-weight: 500;
     line-height: normal;
 }
+
+main {
+    max-width: 1110px;
+    margin: auto;
+    padding-top: 200px;
+}
+
+.main-title {
+    color: var(--dark, #404149);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.main-main-cards {
+    display: flex;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.cards-title {
+    color: var(--dark, #404149);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: overline;
+    text-decoration-color: var(--accent, #F7654A);
+    margin-top: 45px;
+
+}
+
+.cards-text {
+    color: #999;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
+}
