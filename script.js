@@ -8,7 +8,7 @@ const cards = [["./images/img.main/arena.svg"], ["Арена"], ["Мы сдел�
 
 
 
-for(let i = 0; i <= 3; i++){
+for(let i = 0; i <= 2; i++){
 const icon = cards[0];
 const title = cards[1];
 const text = cards[2];
