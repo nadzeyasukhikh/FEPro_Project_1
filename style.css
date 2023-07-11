@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Oswald;
+    font-style: normal;
+}
+
+header {
+    background-image: url(images/img.header/Rectangle.svg);
+    height: 740px;
+    width: 100%;
+}
+
+header h1 {
+    text-align: center;
+    padding-top: 192px;
+    color: var(--white, #FFF);
+    font-size: 64px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
+}
+
+.header-text {
+    text-align: center;
+    padding-top: 35px;
+    color: var(--white, #FFF);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.header-div {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    max-width: 1110px;
+    max-height: 300px;
+    margin: 20px auto 0 auto;
+    margin-top: 20px;
+    background: #FFF;
+    padding: 57px 130px;
+}
+
+.card-num {
+    color: var(--accent, #F7654A);
+    font-size: 72px;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.card-title {
+    color: #000;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.card-text {
+    color: var(--gray, #999);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+}
