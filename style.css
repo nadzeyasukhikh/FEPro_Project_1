@@ -104,7 +104,6 @@ main {
     font-weight: 500;
     line-height: normal;
     margin-top: 15px;
-
 }
 
 .cards-text {
@@ -115,4 +114,51 @@ main {
     font-weight: 400;
     line-height: normal;
     margin-top: 20px;
+}
+.bar-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+    height: 181px;
+    background: var(--accent, #F7654A);
+}
+.bar-info-text {
+    margin-left: 395px;
+    margin-top: 30px;
+}
+.bar-info-text h2 {
+    color: #FFF;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.96px;
+}
+
+.bar-info-text h5 {
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    margin-top: 20px;
+}
+
+.bar-info-btn {
+    margin-right: 395px;
+    margin-top: 73px;
+}
+
+.bar-info-btn button {
+    width: 175px;
+    height: 49px;
+    border: none;
+    background: #FFF;
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.7px;
 }
