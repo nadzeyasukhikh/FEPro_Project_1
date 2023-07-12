@@ -1,5 +1,5 @@
 const main = document.querySelector("main");
-const main_title = document.createElement("h3");
+const main_title = document.createElement("h2");
 main_title.setAttribute("class", "main-title");
 main_title.innerText = "НАШИ САМЫЕ БОЛЬШИЕ ПРОЕКТЫ"
 main.append(main_title);
@@ -11,9 +11,6 @@ const cards = [["./images/img.main/arena.svg"], ["Арена"], ["Мы сдел�
 
 
 for(let i = 0; i <= 2; i++){
-const icon = cards[0];
-const title = cards[1];
-const text = cards[2];
 
 const main_cards = document.createElement("div");
 main_cards.setAttribute("class", "main-cards");
@@ -23,14 +20,18 @@ cards_icon.setAttribute("class", "cards-icon");
 cards_icon.src = cards[0];
 main_cards.append(cards_icon);
 
-const cards_title = document.createElement("h5");
+const cards_bar = document.createElement("div");
+cards_bar.setAttribute("class", "cards-bar");
+main_cards.append(cards_bar);
+
+const cards_title = document.createElement("h3");
 cards_title.setAttribute("class", "cards-title");
-cards_title.innerText = title;
+cards_title.innerText = cards[1];
 main_cards.append(cards_title);
 
 const cards_text = document.createElement("p");
 cards_text.setAttribute("class", "cards-text")
-cards_text.innerText = text;
+cards_text.innerText = cards[2];
 main_cards.append(cards_text);
 
 main.append(main_main_cards);
