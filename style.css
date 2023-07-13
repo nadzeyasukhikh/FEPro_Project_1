@@ -6,21 +6,22 @@
 body {
     font-family: Oswald;
     font-style: normal;
+    line-height: normal;
+    font-weight: 500;
 }
 
 header {
     background-image: url(images/img.header/Rectangle.svg);
-    height: 740px;
-    width: 100%;
+    
 }
 
 header h1 {
+    width: 734px;
+    margin: auto;
     text-align: center;
     padding-top: 192px;
     color: var(--white, #FFF);
     font-size: 64px;
-    font-weight: 500;
-    line-height: normal;
     letter-spacing: 1.28px;
     text-transform: uppercase;
 }
@@ -31,7 +32,6 @@ header h1 {
     color: var(--white, #FFF);
     font-size: 18px;
     font-weight: 400;
-    line-height: normal;
     text-transform: uppercase;
 }
 
@@ -50,24 +50,18 @@ header h1 {
 .card-num {
     color: var(--accent, #F7654A);
     font-size: 72px;
-    font-weight: 500;
-    line-height: normal;
     text-transform: uppercase;
 }
 
 .card-title {
     color: #000;
     font-size: 36px;
-    font-weight: 500;
-    line-height: normal;
     text-transform: uppercase;
 }
 
 .card-text {
     color: var(--gray, #999);
     font-size: 18px;
-    font-weight: 500;
-    line-height: normal;
 }
 
 main {
@@ -80,8 +74,6 @@ main {
     color: var(--dark, #404149);
     text-align: center;
     font-size: 36px;
-    font-weight: 500;
-    line-height: normal;
     text-transform: uppercase;
 }
 
@@ -101,8 +93,6 @@ main {
 .cards-title {
     color: var(--dark, #404149);
     font-size: 24px;
-    font-weight: 500;
-    line-height: normal;
     margin-top: 15px;
 }
 
@@ -110,45 +100,41 @@ main {
     color: #999;
     font-family: Open Sans;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     margin-top: 20px;
 }
 .bar-info {
-    display: flex;
-    justify-content: space-between;
+    
     margin-top: 200px;
     height: 181px;
     background: var(--accent, #F7654A);
 }
-.bar-info-text {
-    margin-left: 395px;
-    margin-top: 30px;
+.bar-info-text-btn {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1110px;
+    margin: auto;
+    align-items: center;
+    padding-top: 30px;
 }
+
+
 .bar-info-text h2 {
     color: #FFF;
     font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    font-weight: 700;  
     letter-spacing: 0.96px;
 }
 
 .bar-info-text h5 {
     color: #FFF;
     font-size: 24px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: 0.48px;
     margin-top: 20px;
 }
 
-.bar-info-btn {
-    margin-right: 395px;
-    margin-top: 73px;
-}
+
 
 .bar-info-btn button {
     width: 175px;
@@ -157,8 +143,27 @@ main {
     background: #FFF;
     color: #000;
     font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
     letter-spacing: 0.7px;
+}
+
+.our-work-one {
+    max-width: 1110px;
+    margin: auto;
+   text-align: center;
+   margin-top: 150px;
+}
+.our-work-one-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 125px;
+    
+    
+}
+.our-work-one-cards h4 {
+    width: 172px;
+    color: #000;
+text-align: center;
+font-size: 21px;
+letter-spacing: 0.42px;
+margin-top: 30px;
 }

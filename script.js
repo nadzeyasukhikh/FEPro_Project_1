@@ -6,7 +6,11 @@ main.append(main_title);
 const main_main_cards = document.createElement("div")
 main_main_cards.setAttribute("class", "main-main-cards")
 
-const cards = [["./images/img.main/arena.svg"], ["Арена"], ["Мы сделали самую красивую арену в Европе. Это открытие стало для нас прорывной точкой для разивтия на следующие десятилетия. Мы очень рады данному еву."]];
+const cards = [
+    ["./images/img.main/arena.svg"],
+    ["Арена"],
+    ["Мы сделали самую красивую арену в Европе. Это открытие стало для нас прорывной точкой для разивтия на следующие десятилетия. Мы очень рады данному еву."]
+];
 
 
 
