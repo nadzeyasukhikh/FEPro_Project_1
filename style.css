@@ -149,21 +149,90 @@ main {
 .our-work-one {
     max-width: 1110px;
     margin: auto;
-   text-align: center;
-   margin-top: 150px;
+    text-align: center;
+    margin-top: 150px;
 }
+
+.our-work-one h2 {
+    color: #000;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
 .our-work-one-cards {
     display: flex;
     justify-content: space-between;
     margin-top: 125px;
-    
-    
 }
+
 .our-work-one-cards h4 {
     width: 172px;
     color: #000;
-text-align: center;
-font-size: 21px;
-letter-spacing: 0.42px;
-margin-top: 30px;
+    text-align: center;
+    font-size: 21px;
+    letter-spacing: 0.42px;
+    margin-top: 30px;
+}
+footer {
+    max-width: 1110px;
+    margin: auto;
+    margin-top: 112px;
+    text-align: center;
+}
+.footer h2 {
+color: #000;
+font-size: 36px;
+}
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    
+}
+
+.footer-contacts p {
+    color: var(--gray, #999);
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    margin-top: 36px;
+}
+
+.footer-contacts h3 {
+    margin-top: 25px;
+    color: #000;
+    text-align: center;
+    font-size: 24px;
+}
+
+.footer-ch p {
+    margin-top: 44px;
+}
+
+.footer-ch h3 {
+    color: var(--accent, #F7654A);
+}
+
+.footer-bar {
+    width: 100%;
+    background: var(--dark, #404149);
+    margin-top: 60px;
+}
+
+.footer-bar-info {
+    max-width: 1110px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.footer-bar-info p {
+    color: var(--white, #FFF);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
 }
