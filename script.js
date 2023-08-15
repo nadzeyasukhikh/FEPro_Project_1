@@ -1,42 +1,37 @@
-const main = document.querySelector("main");
-const main_title = document.createElement("h2");
-main_title.setAttribute("class", "main-title");
-main_title.innerText = "НАШИ САМЫЕ БОЛЬШИЕ ПРОЕКТЫ"
+import {cardsData} from "./scripts/utils.js"
+import {main} from "./scripts/globalVariables.js"
+import {createElement} from "./scripts/logic.js"
+
+
+
+const main_title = createElement("h2", "main-title");
+main_title.innerText = "НАШИ САМЫЕ БОЛЬШИЕ ПРОЕКТЫ";
 main.append(main_title);
-const main_main_cards = document.createElement("div")
-main_main_cards.setAttribute("class", "main-main-cards")
 
-const cards = [
-    ["./images/img.main/arena.svg"],
-    ["Арена"],
-    ["Мы сделали самую красивую арену в Европе. Это открытие стало для нас прорывной точкой для разивтия на следующие десятилетия. Мы очень рады данному еву."]
-];
-
-
-
-for(let i = 0; i <= 2; i++){
-
-const main_cards = document.createElement("div");
-main_cards.setAttribute("class", "main-cards");
-
-const cards_icon = document.createElement("img");
-cards_icon.setAttribute("class", "cards-icon");
-cards_icon.src = cards[0];
-main_cards.append(cards_icon);
-
-const cards_bar = document.createElement("div");
-cards_bar.setAttribute("class", "cards-bar");
-main_cards.append(cards_bar);
-
-const cards_title = document.createElement("h3");
-cards_title.setAttribute("class", "cards-title");
-cards_title.innerText = cards[1];
-main_cards.append(cards_title);
-
-const cards_text = document.createElement("p");
-cards_text.setAttribute("class", "cards-text")
-cards_text.innerText = cards[2];
-main_cards.append(cards_text);
-
+const main_main_cards = createElement("div", "main-main-cards");
 main.append(main_main_cards);
-main_main_cards.append(main_cards)}
+
+function createCards(cardsData) {
+    cardsData.forEach(card => {
+        const main_cards = createElement("div", "main-cards");
+        main_main_cards.append(main_cards);
+    
+        const cards_icon = createElement("img", "cards-icon");
+        cards_icon.src = card.icon;
+        main_cards.append(cards_icon);
+    
+        const cards_bar = document.createElement("div");
+        cards_bar.setAttribute("class", "cards-bar");
+        main_cards.append(cards_bar);
+    
+        const cards_title = createElement("h3", "cards-title");
+        cards_title.innerText = card.title;
+        main_cards.append(cards_title);
+    
+        const cards_text = createElement("p", "cards-text");
+        cards_text.innerText = card.text;
+        main_cards.append(cards_text);
+    });
+    }
+
+createCards(cardsData);
